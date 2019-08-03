@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Slide Panel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="slide-panel.css"></link>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	<script>
+	
+		$(document).ready(function (){
+			$(".pull-me").click(function(){
+				$(".panel").slideToggle("slow");
+			});
+		});
+	
+	</script>
+  </head>
+  <body>
+    <div class="panel">
+      <br>
+      <br>
+      <p>Now you see me!</p>
+    </div>
+    <p class="slide"><div class="pull-me">Slide Up/Down</div></p>
+  </body>
+</html>

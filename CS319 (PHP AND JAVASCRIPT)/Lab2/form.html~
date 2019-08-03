@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="lab2.css">
+	<title>Lab 2 Form</title>
+</head>
+<body>
+	<form> Drink Type: <br>
+		<input type="radio" name="drink" id="drink1"> Americano <br>
+		<input type="radio" name="drink" id="drink2"> Cappuccino <br>
+		<input type="radio" name="drink" id="drink3"> Latte <br>
+		<input type="radio" name="drink" id="drink4"> Macchiato <br>
+		<input type="radio" name="drink" id="drink5"> Mocha <br> <br>
+		
+		<select>
+			<option>Small</option>
+			<option>Medium</option>
+			<option>Large</option>		
+		</select> <br> <br>
+		
+		<input type="checkbox" name="extras" id="extras"> Extra Espresso Shot <br>
+		<input type="checkbox" name="extras" id="extras"> Caramel Shot <br>
+		<input type="checkbox" name="extras" id="extras"> Hazelnut Shot <br>
+		<input type="checkbox" name="extras" id="extras"> Vanilla Shot <br> <br>
+		
+		Order For (name): <input type="text" name="name" id="name"><br> <br>
+		
+		<button class="order" type="button">Order!</button>
+		
+	</form>
+</body>
+</html>

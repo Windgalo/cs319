@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Vanishing Act</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="vanishing-act.css"></link>
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+	
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$(".vanish").fadeOut("slow");
+			});
+			$("#vanish1").click(function(){
+				$("#vanish1").fadeOut("slow");
+			});			
+			$("#vanish2").click(function(){
+				$("#vanish2").fadeOut("slow");
+			});
+			$("#vanish3").click(function(){
+				$("#vanish3").fadeOut("slow");
+			});
+			$("#vanish4").click(function(){
+				$("#vanish4").fadeOut("slow");
+			});			
+		});
+	</script>
+	</head>
+	<body>
+    <div class="vanish"></div>
+    <div class="vanish"></div>
+    <div class="vanish"></div>
+    <div class="vanish"></div>
+    <p><button>Click Me!</button></p>
+    <hr>
+    <div id="vanish1" class="otherVanish"></div>
+    <div id="vanish2" class="otherVanish"></div>
+    <div id="vanish3" class="otherVanish"></div>
+    <div id="vanish4" class="otherVanish"></div>
+	</body>
+</html>

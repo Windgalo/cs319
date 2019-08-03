@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Name Cleanup</title>
+		<meta charset="utf-8">
+		
+		<script>
+			function cleanupName() {
+			var firstName;
+				firstName = document.cleanup.firstName.value;
+				firstName = firstName.trim();
+				firstName = firstName.toUpperCase();
+			var mi;
+				mi = document.cleanup.mi.value;
+				mi = mi.trim();
+				mi = mi.toUpperCase();
+			var lastName;
+				lastName = document.cleanup.lastName.value;
+				lastName = lastName.trim();
+				lastName = lastName.toUpperCase();
+			var fullName
+				fullName = firstName + " " + mi + " " + lastName
+			
+			document.getElementById("output").value = fullName
+			
+			}
+		</script>
+	</head>
+	<body>
+	<form id="cleanup" name="cleanup" action="#" method="get">
+		<p>			
+			First Name: <input type="text" id="firstName">
+		</p>
+		<p>
+			Middle Initial: <input type="text" id="mi">
+		</p>
+		<p>
+			Last Name: <input type="text" id="lastName">
+		</p>
+		<p>
+			<input type="button" id="cleanupButton" name="Cleanup Name" value="Cleanup Name!" onclick = "cleanupName();">
+		</p>
+		<p>
+			Full Name: <input type="text" id="output">
+		</p>
+	</form>
+	</body>
+</html>

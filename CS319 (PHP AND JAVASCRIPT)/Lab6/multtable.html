@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Even Numbers</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<table border="1">
+			<script>
+				var x_counter = 1;
+				var y_counter = 1;
+				
+				while(y_counter <= 9){
+					document.write("<tr>");
+					
+						while(x_counter <= 9){
+							document.write("<td>" + y_counter * x_counter + "</td>");
+							x_counter = x_counter + 1;
+						}
+						
+					document.write("</tr>");
+					
+					y_counter = y_counter + 1;
+					x_counter = 1;	
+				}
+			</script>
+		</table>
+	</body>
+</html>

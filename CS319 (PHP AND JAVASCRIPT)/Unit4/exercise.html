@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Mad Libs</title>
+		<meta charset="utf-8">
+		
+		<script>
+			function Madlib() {
+			var name;
+			var number;
+			var color;
+			var phase;
+			
+			name = document.madlib.name.value;
+			number = document.madlib.number.value;
+			color = document.madlib.color.value;
+			phase = document.madlib.phase.value;
+			
+			document.getElementById("output").innerHTML = "My name is " + name + " and when I turn the age of " + number + " there will be a " + color + " " + phase + " in the sky!";
+			
+			
+			}
+		</script>
+	</head>
+	<body>
+	<form id="madlib" name="madlib" action="#" method="get">
+		<p>			
+			<l>Name: </l><input type="text" id="name">
+		</p>
+		<p>
+			<l>Number: </l><input type="text" id="number">
+		</p>
+		<p>Color:<br>
+			<input type="radio" id="red" name="color" value="red">Red<br>
+			<input type="radio" id="green" name="color" value="green">Green<br>
+			<input type="radio" id="salmon" name="color" value="salmon">Salmon<br>
+		</p>	
+		<p> The Moon's Phases: <br>
+			<select id="phase">
+				<option value="new moon">New Moon</option>
+				<option value="crescent">Crescent</option>
+				<option value="waxing gibbous">Waxing Gibbous</option>
+				<option value="waning gibbous">Waning Gibbous</option>
+				<option value="full moon">Full Moon</option>
+			</select>
+		</p>		
+		<p>
+			<input type="button" id="tell story" name="tell story" value="Tell Story!" onclick = "Madlib();">
+				
+		</p>
+		<hr>
+		<p id="output"></p>
+	</form>
+	</body>
+</html>
